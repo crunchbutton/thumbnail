@@ -6,6 +6,9 @@ if (isset($_REQUEST['__url'])) {
 	$page = [];
 }
 
+header('Location: http://beta.crunchr.co/i/'.$page[0].'/'.$page[1]);
+exit;
+
 $cache = './cache/';
 $pubcache = '/cache/';
 $source = './image/';
